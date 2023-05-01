@@ -21,6 +21,20 @@ namespace playfair
                     matrix[i, j] = szoveg[i * 5 + j];
                 }
             }
+
+            //alternatív megoldás:
+            /*
+            int i = 0;
+            while (!sr.EndOfStream)
+            {
+                string sor = sr.ReadLine();
+                for (int j = 0; i < sor.Length; j++)
+                {
+                    matrix[i, j] = sor[j];
+                }
+                i++;
+            } 
+            */
         }
 
         public int SorIndex(char keresett)
